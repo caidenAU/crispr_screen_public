@@ -6,6 +6,7 @@ For MAGeCK Walkthrough and explanation
 ```
 https://hpc.nih.gov/apps/MAGeCK.html 
 ```
+The tool for analyzing sgRNA library coverage is a command line tool, the easiest way to use it is through the bash terminal in BioHPC.
 
 MAGeck requires an index of sgRNAs. We are using the brunello library which can be downloaded in BioHPC with the following command
 ```
@@ -44,7 +45,7 @@ INFO  @ Tue, 10 Oct 2023 16:00:33: reads	84987914
 INFO  @ Tue, 10 Oct 2023 16:00:33: label	09 
 INFO  @ Tue, 10 Oct 2023 16:00:33: zerosgrnas	78 
 ```
-This is saying that the library index contains 77441 sgRNAs, and that from our input file, 10516885 reads mapped. From this, only 78 sgRNAs were not present in our preparation. This represents (77441-78) / 77441 = 99.899% coverage, which is more than sufficient. 
+This is saying that the library index contains 77441 sgRNAs, and from our input file, 10516885 reads mapped. From this, only 78 sgRNAs were not present in our preparation. This represents (77441-78) / 77441 = 99.899% coverage, which is more than sufficient. 
 
 The script will out a variety of log files in the curret working directory
 ```
